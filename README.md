@@ -35,11 +35,16 @@ This repository contains my answers, learning experience, (equations, theorems o
        Equations: none.  
        Challenges faced: The primary challenge lied in implementing a dynamic programming solution that balances segment extension limits and stability constraints while minimizing cumulative transition costs across a multidimensional state space.  
        Approach: Use a dynamic programming approach to track the minimum cumulative wear cost for all valid (Inner,Outer) configurations at each target step, transitioning from the optimal states of the previous target.
-       Resources: Chatgpt, google, geeksforgeeks.
+       Resources: google, geeksforgeeks.
   
 4) Hard dose questions:
    i)Question 1-->[view code](./hard/q1.py)
       Challenges faced: Mapping out Rover Brick’s arena is honestly a bit of a head-scratcher because you’re essentially trying to translate abstract directions into a rigid grid. The biggest hurdle is figuring out where "start" actually is; since the file gives you distances for North, South, East, and West, you can’t just start at (0,0) or you’ll immediately hit a wall of negative numbers the moment the Rover looks North. You have to scan the whole file first just to find the furthest point in every direction to size your n×n matrix properly, then do some mental gymnastics to shift every coordinate so the entire path fits on the board. On top of that, since the motor driver is acting up and blocking diagonal moves, you’re forced to treat the arena like a strict city-block layout where even a simple shortcut is off-limits. It’s a classic case of taking messy, real-world directional data and trying to force it into a clean, binary matrix of 1s and 0s without losing your place in the process.  
-      Resources: gemini, chatgpt.  
+      Resources: gemini, chatgpt.
+
+  Learning experience:  
+  I hadn't known much python before attemtping this task since i had only learnt it in 9th and 10th grade, but through the research for many of the questions which were given in this task, i have gotten a better grasp on many new python concepts and thus im grateful to the makers of this task.  
+  I found quite a few questions challenging, questions 1, 4 and 5 of medium dose made me think a lot and I got stuck in many places too, question 1 of hard dose was obviuosly the most challenging and i took a long time to understand its logic.  
+  Overall I can confidently say that i have learnt quite a bit from this experience and am looking forward for further tasks the mars club may give.
    i) Question 1--> 
    
