@@ -23,14 +23,12 @@ This repository contains my answers, learning experience, (equations, theorems o
        
    iii) Question 3--> [view code](./medium/q3.c)  
        Equations: for postion 1: subract 1, position 2: subtract 2, position 3: subtract 3 and so on.  
-       Challenges faced: none.  
-       Approach: I was finding it hard to decode the message, iterate through the string, convert each character to uppercase by subtracting 32 if necessary, and then subtract its position-based shift (i+1) from its alphabetical index while using modulo arithmetic to ensure the value wraps correctly within the 26-letter alphabet.  
+       Challenges faced: I was finding it hard to decode the message, iterate through the string, convert each character to uppercase by subtracting 32 if necessary, and then subtract its position-based shift (i+1) from its alphabetical index while using modulo arithmetic to ensure the value wraps correctly within the 26-letter alphabet.  
        Resources: none.  
      
    iv) Question 4--> [view code](./medium/q4.c)  
        Equations: median and mean.  
-       Challenges faced: none.  
-       Approach: I was finding it hard to stabilize the sensor data, the rover applied a median filter to a sliding window of the log.txt readings, effectively discarding chaotic outliers caused by microgravity while preserving the true signal necessary for a safe deployment.  
+       CHallenges faced: I was finding it hard to stabilize the sensor data, the rover applied a median filter to a sliding window of the log.txt readings, effectively discarding chaotic outliers caused by microgravity while preserving the true signal necessary for a safe deployment.  
        Resouces: Chatgpt.
   
    v) Question 5--> [view code](./medium/q5.py)  
